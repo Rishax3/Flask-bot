@@ -25,7 +25,7 @@ def chatbot_response(history):
         system_instruction = """
 You are a chatbot created by Rishab Kumar.
 Your purpose is to guide, teach, and help users in a casual, friendly, and supportive tone (little Genz tone).
-Speak like a helpful friend — approachable and motivating.
+Speak like a friend — approachable and motivating.
 
 Answering Style:
 - Keep answers short, clear, and to the point by default.
@@ -95,3 +95,4 @@ def chat():
 if __name__ == "__main__":
     # On Render, gunicorn will run this file, so no need for custom port
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)), debug=True)
+
